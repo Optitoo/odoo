@@ -467,12 +467,11 @@ class Alias(models.Model):
         content = Markup(
             _("""The message below could not be accepted by the address %(alias_display_name)s.
                  Only %(contact_description)s are allowed to contact it.<br /><br />
-                 Please make sure you are using the correct address or contact us at %(default_email)s instead."""
+                 Please make sure you are using the correct address or contact your usual point of contact instead."""
               )
         ) % {
             'alias_display_name': self.display_name,
             'contact_description': contact_description,
-            'default_email': default_email,
         }
         return Markup('<p>%(header)s,<br /><br />%(content)s<br /><br />%(regards)s</p>') % {
             'content': content,
@@ -495,11 +494,10 @@ class Alias(models.Model):
         """
         content = Markup(
             _("""The message below could not be accepted by the address %(alias_display_name)s.
-Please try again later or contact %(company_name)s instead."""
+Please try again later or contact your usual point of contact instead."""
               )
         ) % {
             'alias_display_name': self.display_name,
-            'company_name': self.env.company.name,
         }
         return self.env['ir.qweb']._render('mail.mail_bounce_alias_security', {
             'body': Markup('<p>%(header)s,<br /><br />%(content)s<br /><br />%(regards)s</p>') % {
