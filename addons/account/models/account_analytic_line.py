@@ -88,6 +88,7 @@ class AccountAnalyticLine(models.Model):
             )
         return super().view_header_get(view_id, view_type)
 
+    @api.model_create_multi
     def create(self, vals):
         analytic_lines = super().create(vals)
         analytic_lines.move_line_id._update_analytic_distribution()
