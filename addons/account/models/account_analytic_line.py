@@ -94,7 +94,6 @@ class AccountAnalyticLine(models.Model):
         analytic_lines.move_line_id._update_analytic_distribution()
         return analytic_lines
 
-    @api.model_create_multi
     def write(self, vals):
         affected_move_lines = self.move_line_id
         res = super().write(vals)
