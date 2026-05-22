@@ -104,7 +104,7 @@
             <field name="name">marketing_automation</field>
             <field name="shortdesc">Marketing Automation</field>
             <field name="sequence">195</field>
-            <field name="category_id" ref="base.module_category_marketing_email_marketing"/>
+            <field name="category_id" ref="base.module_category_marketing"/>
             <field name="application" eval="True"/>
             <field name="summary">Build automated mailing campaigns</field>
             <field name="license">OEEL-1</field>
