@@ -9944,6 +9944,7 @@ msgstr "Le message ci-dessous n'a pas été accepté par l'adresse"
 #. odoo-python
 #: code:addons/mail/models/mail_alias.py:0
 msgid ""
+<<<<<<< HEAD
 "The message below could not be accepted by the address %"
 "(alias_display_name)s.\n"
 "                 Only %(contact_description)s are allowed to contact it.<br /"
@@ -9957,11 +9958,21 @@ msgstr ""
 "cette adresse.<br /><br />\n"
 "                 Veuillez vous assurer que vous utilisez la bonne adresse ou "
 "contactez-nous sur %(default_email)s."
+=======
+"The message below could not be accepted by the address %(alias_display_name)s.\n"
+"                 Only %(contact_description)s are allowed to contact it.<br /><br />\n"
+"                 Please make sure you are using the correct address or contact your usual point of contact instead."
+msgstr ""
+"Le message ci-dessous n'a pas été accepté par l'adresse %(alias_display_name)s.\n"
+"                 Seuls %(contact_description)s sont autorisés à contacter cette adresse.<br /><br />\n"
+"                 Veuillez vous assurer que vous utilisez la bonne adresse ou contactez plutôt votre point de contact habituel."
+>>>>>>> 1d2558dea6d4 ([MIG] GPN-56: 17.0-mail_alias_company_name - do not use company name or contact for mail alias message)
 
 #. module: mail
 #. odoo-python
 #: code:addons/mail/models/mail_alias.py:0
 msgid ""
+<<<<<<< HEAD
 "The message below could not be accepted by the address %"
 "(alias_display_name)s.\n"
 "Please try again later or contact %(company_name)s instead."
@@ -9969,6 +9980,13 @@ msgstr ""
 "Le message ci-dessous n'a pas été accepté par l'adresse %"
 "(alias_display_name)s.\n"
 "Veuillez réessayer ou contacter %(company_name)s."
+=======
+"The message below could not be accepted by the address %(alias_display_name)s.\n"
+"Please try again later or contact your usual point of contact instead."
+msgstr ""
+"Le message ci-dessous n'a pas été accepté par l'adresse %(alias_display_name)s.\n"
+"Veuillez réessayer ou contacter plutôt votre interlocuteur habituel."
+>>>>>>> 1d2558dea6d4 ([MIG] GPN-56: 17.0-mail_alias_company_name - do not use company name or contact for mail alias message)
 
 #. module: mail
 #. odoo-javascript
