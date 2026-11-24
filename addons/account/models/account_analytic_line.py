@@ -162,6 +162,7 @@ class AccountAnalyticLine(models.Model):
 
         return [('id', 'in', lines.ids)]
 
+    @api.model_create_multi
     def create(self, vals):
         analytic_lines = super().create(vals)
         analytic_lines.move_line_id._update_analytic_distribution()
